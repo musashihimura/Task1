@@ -1,0 +1,26 @@
+function filter($array)
+{
+	foreach($array as $arrow)
+	{
+		if($arrow%3==0 && $arrow%5!=0)
+		{
+			echo "FIZZ ";
+		}
+		else if($arrow%3!=0 && $arrow%5==0)
+		{
+			echo "BUZZ ";
+		}
+		else if($arrow%3==0 && $arrow%5==0)
+		{
+			echo "FIZZBUZZ ";
+		}
+		else
+		{
+			echo $arrow." ";
+		}
+	}
+
+}
+
+$a = array(12,13,14,15,16);
+filter($a);
